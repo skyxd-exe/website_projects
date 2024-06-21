@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    justify-content: space-around;
+}
+body{
+    background: blueviolet;
+}
+.uppermenu{
+    background-color: black;
+    height: fit-content;
+    width: 1458px;
+    padding: 15px;
+    position: relative;
+}
+.navbar {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    position: relative;
+}
+.navbar a h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: "Jacquard 12", system-ui;
+    cursor: pointer;
+    text-decoration: none;
+}
+.child{
+    position: absolute;
+    left: 1270px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+.child a p {
+    color: #fff;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+
+.child P:hover{
+    color: #ffffffc3;
+    text-decoration: underline;
+    transition: 500ms;
+}
+.searchbar{
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    left: 100px;
+    bottom: 22px;
+}
+.searchbar input {
+    width: 150px;
+    height: 30px;
+    padding-left: 25px;
+    background: black;
+    border: solid white 3px;
+    border-radius: 20px;
+    color: white;
+    border-color: white;
+
+}
+.fa-magnifying-glass{
+    font-size: 15px;
+    color: white;
+    right: 170px;
+    position: relative;
+    top: 12px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .uppermenu .child .navbar {
+        left: 850px;
+    }
+
+          
+}
+@media screen and (max-width: 768px){
+    .uppermenu .child .navbar {
+        left: 600px;
+    }
+          
+}
+@media screen and (max-width: 500px){
+    .uppermenu .child .navbar {
+        left: 270px;
+    }
+          
+}
+@media screen and (max-width: 380) {
+    .uppermenu .child .navbar {
+        left: 50px;
+    }
+}
+
