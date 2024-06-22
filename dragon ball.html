@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goku</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="wrapper">
+    <h1>LOGIN</h1>
+    <div class="inputbox1">
+    <input type="text" 
+          placeholder="Username" id="myinput" maxlength="20" onclick="add()" required>
+    <i class='bx bx-user'></i>
+    
+    </div>
+    <div class="inputbox1">
+    <input type="password"
+          placeholder="Password" id="mypass" maxlength="15" required>
+    <i class='bx bx-lock-alt' ></i>
+
+    </div>
+    <div class="remember-forgot">
+    <label><input type="checkbox">Remember me</label>
+    <a href="#">Forgot password</a>
+    </div>
+    <a href="main page/second page.html">
+   <button type="submit" class="button" id="myinput" onclick="add()" > LOGIN</button> 
+   </a>
+    <div class="register">
+    <P>Don't have an account? <a href="#">register</a></P>
+    </div>
+   </div>
+   <div class="logo">
+      <img src="dragon1.png" alt="dragon">    
+   </div>
+</body>
+<script>
+      // Enforce character limit on input placeholder
+      document.getElementById("myInput").addEventListener("input", function() {
+        if (this.value.length > 15) {
+          this.value = this.value.slice(0, 20);
+        }
+      });
+
+      document.getElementById("mypass").addEventListener("input", function() {
+        if (this.value.length > 15) {
+          this.value = this.value.slice(0, 15);
+        }
+      });
+  </script>
+</html>
